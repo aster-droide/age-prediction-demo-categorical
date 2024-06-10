@@ -2,9 +2,9 @@
 
 This is a demo repository for my dissertation: "_A WHISKER OF TRUTH: A DEEP LEARNING PIPELINE FOR AGE PREDICTION FROM VOCALISATIONS OF THE DOMESTIC FELINE_"
 
-This tool is designed for predicting the age group (adult, kitten, senior) of samples based on pre-extracted embeddings. The model is trained on a full dataset, with a few samples held back for performance demonstration purposes.
+Basic UI for demonstration purposes. This tool is designed for predicting the age group (kitten, adult, senior) of samples based on pre-extracted embeddings. The model is trained on a full dataset, with a few samples held back for performance demonstration.
 
-In a production environment, support for uploading wav files and extracting embeddings in real-time will be added. 
+In a production environment, support for uploading wav files to extract embeddings in real-time will be added.
 
 
 ## Demo Video
