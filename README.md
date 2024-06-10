@@ -9,7 +9,7 @@ In a production environment, support for uploading wav files and extracting embe
 
 ## Demo Video
 
-A demo video is included to showcase the functionality of the tool. The actual class column is included for performance demonstration. In a production environment, this column would not be present.
+A demo video is included to showcase the functionality of the tool. The actual class column is included for performance demonstration. In a production environment, this column would not be present. Best viewed with sound on for commentary. 
 
 
 https://github.com/aster-droide/age-prediction-demo-categorical/assets/105680030/3f60851f-3ee9-4901-af2f-2f5e99b9583a
