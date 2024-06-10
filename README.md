@@ -1,6 +1,6 @@
 # Tool for Categorical Age Prediction of the Domestic Feline
 
-This is a demo repository for my dissertation: "_A WHISKER OF TRUTH: A DEEP LEARNING PIPELINE FOR AGE PREDICTION FROM VOCALISATIONS IN THE DOMESTIC FELINE_"
+This is a demo repository for my dissertation: "_A WHISKER OF TRUTH: A DEEP LEARNING PIPELINE FOR AGE PREDICTION FROM VOCALISATIONS OF THE DOMESTIC FELINE_"
 
 This tool is designed for predicting the age group (adult, kitten, senior) of samples based on pre-extracted embeddings. The model is trained on a full dataset, with a few samples held back for performance demonstration purposes.
 
