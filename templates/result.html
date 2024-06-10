@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="result">
+        <h1>Categorical Prediction Results</h1>
+        <br>
+
+        <p><strong>Predicted Class:</strong> {{ mapped_prediction }}</p>
+        <p><strong>Predicted Probability:</strong> {{ prediction }}</p>
+        <p><strong>Actual Class:</strong> {{ actual_label }}</p>
+        <p><strong>Probabilities:</strong>
+            {% for class_name, prob in probabilities.items() %}
+            {{ class_name }}: {{ prob|round(4) }}{% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </p>
+        <br>
+        <a href="/">Go back</a>
+    </div>
+</body>
+</html>

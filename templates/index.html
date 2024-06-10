@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feline Age Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <h1>Feline Age Prediction</h1>
+        <br>
+        <label for="file">Upload Demo File for Categorical Classification:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+        <br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

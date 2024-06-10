@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="result">
+        <h1>Categorical Prediction Results</h1>
+        <br>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Sample Index</th>
+                    <th>Predicted Class</th>
+                    <th>Predicted Probability</th>
+                    <th>Actual Class</th>
+                    <th>Probabilities</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                <tr>
+                    <td>{{ loop.index0 }}</td>
+                    <td>{{ result.mapped_prediction }}</td>
+                    <td>{{ result.prediction }}</td>
+                    <td>{{ result.actual_label }}</td>
+                    <td>
+                        {% for class_name, prob in result.probabilities.items() %}
+                        {{ class_name }}: {{ prob|round(4) }}{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <br>
+
+        <p><strong>Total Accurate Predictions (Percentage):</strong></p>
+        <p>Adult (0): {{ accuracy_percentages[0] }}%</p>
+        <p>Kitten (1): {{ accuracy_percentages[1] }}%</p>
+        <p>Senior (2): {{ accuracy_percentages[2] }}%</p>
+
+        <br>
+        <a href="/">Go back</a>
+    </div>
+</body>
+</html>
